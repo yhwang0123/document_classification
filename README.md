@@ -32,7 +32,7 @@ We have applied several models in machine learning and deep learning, to make th
 - Naive Bay
 
 2. Deep learning
-- Bert
+- Bert \
 As Bert is mainly for english text classification, we translated all the text (both French and Dutch) into English with the GoogleTrans library, and applied the pretrained model 'distilbert-base-uncased' to train the model.
 
 
@@ -40,7 +40,7 @@ As Bert is mainly for english text classification, we translated all the text (b
 1. Accuracy of three machine learning models \
 ![alt text](https://github.com/yhwang0123/document_classification/blob/main/assets/accuracy.png)
 
-2. Deep learning model
+2. Deep learning model \
 Val Accuracy: 0.88
 
 ## App Deployment
