@@ -17,10 +17,11 @@ We dropped the duplicated data, and selected the data only from the source of tr
 For handlining the imbalance in the classes we use text augmentation in two steps: 
 
 - Back Translation: \
-We generated synthetic data by back-translation. We use the GoogleTrans library in four different languages, English, Spanish, Italian, and Chinese and we made back translation to French, and add them to minority labels. Then we drop the duplicates.
+We generated synthetic data by back-translation. We use the GoogleTrans library in four different languages, English, Spanish, Italian, and Chinese and we made back translation to French. Afterwards, we added the translation for minority labels to increase the samples. Then we dropped the duplicates. \
+
 As the number of Dutch text is very limited, we use google translate to make it in French. So the language of the text are consistent.
 
-- Text Augmentation
+- Text Augmentation: \
 We applied contextual text augmentation using the NLPAUG library, and we dropped duplicates text again. 
 
 ## Models:
