@@ -34,8 +34,8 @@ As Bert is mainly for english text classification, we translated all the text (b
 
 
 ## Evaluation of models:
-1. Accuracy of three machine learning models 
-![alt text]https://github.com/yhwang0123/document_classification/blob/main/assets/accuracy.png
+1. Accuracy of three machine learning models \
+![alt text](https://github.com/yhwang0123/document_classification/blob/main/assets/accuracy.png)
 
 2. Deep learning model
 Val Accuracy: 0.88
