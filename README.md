@@ -18,7 +18,7 @@ In order to add samples to minority label, and make data more balanced, we used 
 
 As the number of Dutch text is very limited, we use google translate to make it in French.
 
-- Text Argumentation
+- Text Augmentation
 
 
 ## Models:
@@ -34,10 +34,8 @@ As Bert is mainly for english text classification, we translated all the text (b
 
 
 ## Evaluation of models:
-1. Machine learning model 
-- SVM Accuracy Score ->  91.52542372881356
-- Naive Bay Accuracy Score ->  0.8559322033898306
-- Logistic regression Accuracy Score ->  0.8728813559322034
+1. Accuracy of three machine learning models 
+![alt text]https://github.com/yhwang0123/document_classification/blob/main/assets/accuracy.png
 
 2. Deep learning model
 Val Accuracy: 0.88
