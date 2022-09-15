@@ -27,7 +27,7 @@ We applied contextual text augmentation using the NLPAUG library, and we dropped
 We applied altogether four models in machine learning and deep learning, to make the text classification.
 1. Machine Learning
 - Logistic Regression
-- SVM
+- SVM (support vector machine)
 - Naive Bay
 
 2. Deep learning
@@ -40,7 +40,7 @@ As Bert is mainly for english text classification, we translated all the text (b
 ![alt text](https://github.com/yhwang0123/document_classification/blob/main/assets/accuracy.png)
 
 2. Deep learning model \
-Val Accuracy: 0.88
+Val Accuracy: 0.90
 
 ## App Deployment
 
