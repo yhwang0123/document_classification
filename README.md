@@ -27,8 +27,8 @@ We applied contextual text augmentation using the NLPAUG library, and we dropped
 We applied altogether four models in machine learning and deep learning, to make the text classification.
 1. Machine Learning
 - Logistic Regression
-- SVM (support vector machine)
-- Naive Bay
+- SVM (Support Vector Machine)
+- Naive Bayes
 
 2. Deep learning
 - Bert \
@@ -36,19 +36,17 @@ As Bert is mainly for english text classification, we translated all the text (b
 
 
 ## Evaluation of models:
-1. Accuracy of three machine learning models \
-![alt text](https://github.com/yhwang0123/document_classification/blob/main/assets/accuracy.png)
-
-2. Deep learning model \
-Val Accuracy: 0.90
+* Model accuracy comparison
+![alt text](https://github.com/yhwang0123/document_classification/blob/main/assets/score.png)
 
 ## App Deployment
 
 We developed an app using Streamlit. On this app, users can upload dataset in json or csv format, and choose a model from machine learning or deep learning and get the class prediction for the text. 
+![alt text](https://github.com/yhwang0123/document_classification/blob/main/assets/streamlit.PNG)
 
 ## Required library
 To run the code in this repo, you need to install libraries as below:
-- `pip install -r tf_requirements.txt`
+- `pip install -r requirements.txt`
 
 ## Authors of this project
 * [Pragati Khadka](https://github.com/PragatiKhadka)
