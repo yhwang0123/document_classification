@@ -1,25 +1,28 @@
 # Multi-class Text Classification
 
 ## Objective: 
-The objective of this project is to classify the technical text to multi-class. One text belongs to one class.
+The objective of this project is to classify the technical text to multi-class. 
 
 ## Dataset: 
-* We have a dataset containing more than 500 technical text with 50+ labels. The languages of the text are both in French and Dutch, while the majority language is French. 
+* We have a metadata with 8 files regarding all the labels. Meanwhile, we have a dataset containing more than 500 technical text with 50+ labels. One text belongs to one label. The languages of the text are both in French and Dutch, while the majority language is French. 
 
 ## Workflow
-![alt text](https://github.com/yhwang0123/document_classification/blob/main/workflow.png)
+![alt text](https://github.com/yhwang0123/document_classification/blob/main/assets/workflow.png)
 
 ### Data Explore
-1. we dropped the duplicated data, and select the data only from the source of training. After that, we found the dataset is extremly unbalanced, with 1 sample in a certain label, while 20+ samples in another label.
+We dropped the duplicated data, and selected the data only from the source of training. After that, we found the dataset is extremly unbalanced, with 1 or 2 samples in a certain labels, while 20+ samples in another label.
 
 ### Data Preprocessing and Text Argumentation
-In order to add samples to minority label, we use goolge translate api, to translate the original sample to other languages(English, Spanish, Portuguese,Chinese),and translate back to French. 
+- Translation:
+In order to add samples to minority label, and make data more balanced, we used goolge translate api to translate the original sample to other languages(English, Spanish, Portuguese,Chinese),and translate back to French.
 
-For the number of Dutch text is very limited, we use google translate to make it in French.
+As the number of Dutch text is very limited, we use google translate to make it in French.
+
+- Text Argumentation
 
 
 ## Models:
-We have created applied severl models in machine learning and deep learning:
+We have applied several models in machine learning and deep learning, to make the text classification.
 1. Machine Learning
 - Logistic Regression
 - SVM
@@ -27,7 +30,7 @@ We have created applied severl models in machine learning and deep learning:
 
 2. Deep learning
 - Bert
-as Bert is only for english text classification, we translate the French text in the dataset to English, and apply the pretrained model 'distilbert-base-uncased' to train the model
+As Bert is mainly for english text classification, we translated all the text (both French and Dutch) into English, and applied the pretrained model 'distilbert-base-uncased' to train the model.
 
 
 ## Evaluation of models:
@@ -37,14 +40,14 @@ as Bert is only for english text classification, we translate the French text in
 - Logistic regression Accuracy Score ->  0.8728813559322034
 
 2. Deep learning model
-Accuracy for test: 0.88
+Val Accuracy: 0.88
 
 ## App Deployment
 
-we develop an app using Streamlit. On this app, user can upload dataset in json format or csv format, and choose the model (machine learning or deep learning) and get the class prediction for the text. 
+We developed an app using Streamlit. On this app, user can upload dataset in json format or csv format, and choose the model (machine learning or deep learning) and get the class prediction for the text. 
 
 
-## Authors of this project : 
+## Authors of this project
 * [Pragati Khadka](https://github.com/PragatiKhadka)
 * [Yuri Hernandez Flores](https://github.com/YuriHFlowers)
 * [Yihui Wang](https://github.com/yhwang0123)
