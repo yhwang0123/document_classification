@@ -37,7 +37,7 @@ As Bert is mainly for english text classification, we translated all the text (b
 
 ## Evaluation of models:
 * Model accuracy comparison
-![alt text](https://github.com/yhwang0123/document_classification/blob/main/assets/score.png)
+![alt text](https://github.com/yhwang0123/document_classification/blob/main/assets/performance.png)
 
 ## App Deployment
 
